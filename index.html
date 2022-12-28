@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="./css/styles.Css">
+<title>Video Player</title>
+
+<body>
+  <div class="wrapper">
+    <div class="player">
+      <video id="video" poster="./images/poster.jpg" controls width="500">
+        <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+      </video>
+     
+    <div class="player-overlay">
+     <h2 class="player-title">Musica para programar </h2>   <div class="player-actions">
+        <button aria-label="Adelantar 10 segundos" title="Adelantar 10 segundos" class="button" id="forward"></button>
+        <button aria-label="Reproducir" title="Reproducir" class="button" id="play"></button>
+        <button aria-label="Pausar" title="Pausar" hidden class="button" id="pause"></button>
+        <button aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos" class="button"
+          id="backward"></button>
+      </div>
+      <div class="player-progress">
+        <input id="progress" type="range" min="0" value="0" step="1">
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
